@@ -220,6 +220,9 @@ class HarvestMigration extends MigrateDKAN {
    */
   public function prepareRow($row) {
     parent::prepareRow($row);
+
+    //Validate tags.
+    $row->tags = $this->validate_lenght_term($row->tags);
   }
 
   /**
@@ -883,6 +886,22 @@ class HarvestMigration extends MigrateDKAN {
       $this->addFieldMapping('field_odfe_system_of_records', 'odfe_system_of_records');
       $this->addFieldMapping('field_odfe_category', 'odfe_category');
     }
+  }
+
+  /**
+   * Validate lenght name for a term taxonomy.
+   *
+   * @param string $name
+   *        Taxonomy term name. 
+   *
+   * @return mixed
+   *         An term name or null if failed.
+   */
+  public function validate_lenght_term($name) {
+    $schema = drupal_get_schema('taxonomy_term_data');
+    $length = $schema['fields']['name']['lenght'];
+      
+    return (drupal_strlen($name) > $length) ? NULL : $name;
   }
 
   /**
