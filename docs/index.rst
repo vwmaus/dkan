@@ -18,6 +18,6 @@ Additional resources
 
 - `DKAN Home <http://getdkan.com>`_: Central portal for the DKAN community.
 - `DKAN Starter Documentation <https://dkan-starter.readthedocs.io>`_: Implementation and deployment tools
-- `Granicus Open Data Documentation <https://insights.govdelivery.com/OpenData>`_: User documentation for the Granicus turnkey DKAN product.
+- `Granicus Data Documentation <https://insights.govdelivery.com/OpenData>`_: User documentation for the turnkey SaaS implementation of DKAN.
 - `Drupal Documentation <https://www.drupal.org/documentation>`_
 - `CKAN <https://ckan.org/>`_: Open-source data portal that is the inspiration for DKAN
