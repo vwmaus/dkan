@@ -82,7 +82,6 @@
  - #1603 Upgrade panopoly_images to 1.41
  - #1604 Upgrade file_entity to 2.0-beta3
  - #1605 Upgrade link_iframe_formatter to 1.1
- - #1654 Assign workflow supervisor role to site manager users when dkan workflow is enabled.
  - #1645 Switch to forked version of the spectrum library to address accessibility issues.
  - #1642 Removed eva module.
  - Fixed CSV column validation on visualization entity.
@@ -111,6 +110,9 @@ DKAN Harvest:
  - #1658 Fix 508 compliance errors on admin and node view pages.
  - #1650 Removed links to Harvest Source nodes from main menu.
  - #1672 Prevent harvest source machine name from containing forward slash character.
+ - #1488 Replace field notes by field body in harvest source content type.
+ - #1468 Add support "Compound" fields on Filters/Overrides/Excludes/Default in DKAN Harvest.
+ - Add new "modified date" field, hidden in form, to datasets. This is for dkan_harvest compatibility; saves sources dates into a separate field so they aren't affected by node changes. ODSM mappings also updated.
  - Improved PHP Unit tests.
 DKAN Migrate Base:
  - #1387 Added DKAN Migrate Base module into DKAN Core.
@@ -122,6 +124,8 @@ DKAN Workflow:
  - #1481 Updated workbench_email from 3.9 to 3.11
  - #1667 Fixed admin menu source when dkan_workflow is enabled.
  - #1663 Moved workbench links from dkan_sitewide_menu to dkan_workflow.
+ - #1654 Assign workflow supervisor role to site manager users when dkan workflow is enabled.
+ - Add patch for workbench_moderation to avoid php shutdown function errors.
 DKAN Dataset:
  - Leaflet draw widget usability improvements
  - Fix validation on resource forms when multiple resource type fields are populated
@@ -139,14 +143,11 @@ DKAN Dataset:
  - #1301 Added hook update to migrate the content from field_odfe_category to field_pod_theme on Datasets.
  - #1301 Added new option on DKAN Dataset Forms to enable POD based validation on Dataset form.
  - #1301 Added new option on DKAN Dataset Forms to enable Groups field validation on Dataset form.
- -  #1280 Fixes to groups UX: Group body field now labeled "Description," longer group descriptions do not get cut off after 200 characters on group page, and extraneous "about" tab on Group node edit form removed
- - Add new "modified date" field, hidden in form, to datasets. This is for dkan_harvest compatibility; saves sources dates into a separate field so they aren't affected by node changes. ODSM mappings also updated.
+ - #1280 Fixes to groups UX: Group body field now labeled "Description," longer group descriptions do not get cut off after 200 characters on group page, and extraneous "about" tab on Group node edit form removed
  - Fix keywords/tags creating broken links when containing spaces, and add missing keywords to default content.
- - #1468 Add support "Compound" fields on Filters/Overrides/Excludes/Default in DKAN Harvest.
  - #1477 Fix ODSM permissions for non-admin roles.
  - #1488 Replace field notes by field body in harvest source content type.
  - #1532 Fixed text on 'Download All' button to not display HTML.
- - Add patch for workbench_moderation to avoid php shutdown function errors.
  - #1570 Removed 'Back to dataset' button on standalone resources.
  - Better support of downloading remote files from the resource view page "Download" button.
  - Removed warning when a resource is created without title.
