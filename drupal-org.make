@@ -398,6 +398,11 @@ libraries:
       url: 'https://github.com/NuCivic/spectrum.git'
       tag: 1.8.0-civic-4736
     directory_name: bgrins-spectrum
+  react-dash:
+    download:
+      type: git
+      url: 'https://github.com/NuCivic/react-dash.git'
+      branch: master
   spyc:
     download:
       type: file
