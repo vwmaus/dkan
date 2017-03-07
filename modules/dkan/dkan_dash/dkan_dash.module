@@ -1,5 +1,7 @@
 <?php
 
+include_once 'dkan_dash.features.inc';
+
 /*
  * Implement hook_theme().
  */
