@@ -1,3 +1,8 @@
 npm-debug.log
-app/node_modules
-
+node_modules
+bower_components
+.DS_Store
+dist
+lib
+src/*
+backups/*
