@@ -15,7 +15,12 @@ if(MODE === 'production') {
       },
       output: {comments: false},
       mangle: true
-    })
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
   ]);
 }
 
@@ -23,7 +28,7 @@ module.exports = {
   devtool: devtool,
   entry: ['whatwg-fetch','./src/index'],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '..' ,'dist'),
     filename: 'dkan_dash.min.js'
   },
   plugins: plugins,

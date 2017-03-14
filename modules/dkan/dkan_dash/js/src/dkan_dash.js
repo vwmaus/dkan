@@ -12,12 +12,9 @@ for (let name in Drupal.settings.dkanDash.dataHandlers) {
 export default class DKANDash extends Dashboard {
   constructor(props) {
     super(props);
-
-    this.state.settings = Object.assign({}, this.props, Drupal.settings.dkanDash.dashboard);
-
     this.Datastore = new Datastore({
       baseUrl: baseUrl,
-      dataResources: this.state.settings.dataResources
+      dataResources: this.props.dataResources
     });
 
     this.state.appliedFilters = this.getConstantAppliedFilters();
@@ -32,12 +29,12 @@ export default class DKANDash extends Dashboard {
 
   getDashboardData(appliedFilters) {
     let dashData = Object.assign({}, this.state.data);
-    let dataKeys = Object.keys(this.state.settings.dataResources || {});
+    let dataKeys = Object.keys(this.props.dataResources || {});
     let i = 0;
     appliedFilters = appliedFilters || Object.assign({}, this.state.appliedFilters);
 
     dataKeys.forEach( (dataKey) => {
-      let qObj = Object.assign({}, this.state.settings.dataResources[dataKey]);
+      let qObj = Object.assign({}, this.props.dataResources[dataKey]);
       let filters = this.getAppliedFiltersByDataKey(dataKey, appliedFilters);
       let filterQueries = this.getFilterQueries(filters);
       let qs = this.Datastore.mapQueries(dataKey, qObj.queries, qObj.uuid, filters, filterQueries);
@@ -94,7 +91,7 @@ export default class DKANDash extends Dashboard {
    * settings.dataResources -> queries
    */
   getConstantAppliedFilters() {
-    let dataResources = this.state.settings.dataResources || {};
+    let dataResources = this.props.dataResources || {};
     let constantAppliedFilters = {};
 
     // Drill down through the dataResources and their queries
@@ -182,7 +179,7 @@ export default class DKANDash extends Dashboard {
   }
 
   render() {
-    let settings = this.state.settings;
+    let settings = this.props;
     let regions = settings.regions || [];
     let markup;
     let routeParams = pick(settings, ['history', 'location', 'params', 'route', 'routeParams', 'routes']);

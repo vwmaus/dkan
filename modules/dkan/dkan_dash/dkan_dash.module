@@ -28,8 +28,8 @@ function dkan_dash_preprocess_node(&$variables) {
         'dataHandlers' =>  (object)array(),
       )
     ), 'setting');
-    drupal_add_css(drupal_get_path('module', 'dkan_dash') . '/js/dist/dkan_dash.min.css');
-    drupal_add_js(drupal_get_path('module', 'dkan_dash') . '/js/dist/dkan_dash.min.js', array('scope' => 'footer', 'weight' => 10));
+    drupal_add_css(drupal_get_path('module', 'dkan_dash') . '/dist/dkan_dash.min.css');
+    drupal_add_js(drupal_get_path('module', 'dkan_dash') . '/dist/dkan_dash.min.js', array('scope' => 'footer', 'weight' => 10));
   }
 }
 /**

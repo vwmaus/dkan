@@ -16,13 +16,16 @@ import { Router, Route, browserHistory } from 'react-router';
 import DKANDash from './dkan_dash';
 import { DataHandler } from 'react-dash';
 
+
+const DKANDashWrapper = (props) => <DKANDash {...Drupal.settings.dkanDash.dashboard} />;
+
 // Wrap Dashboard component in router
 class App extends Component {
   render() {
     return (
       <div id="router-container">
         <Router history={browserHistory}>
-          <Route path='*' component={DKANDash}/>
+          <Route path='*' component={DKANDashWrapper}/>
         </Router>
       </div>
     )
