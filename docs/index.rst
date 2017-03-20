@@ -1,5 +1,6 @@
 DKAN Open Data Portal
-=====================
+======================
+
 
 This is the central site for technical/developer documentation of DKAN. DKAN is a Drupal-based open data portal and catalog developed by `Granicus <http://www.granicus.com/>`_ (previously NuCivic and GovDelivery).
 

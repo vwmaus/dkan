@@ -28,6 +28,7 @@ described inside the Datasets section, all this functionality is provided by the
    Storytelling <storytelling/index>
    Open Data Schema Map <open-data-schema>
    Visualizations <visualizations/index>
+   Dashboards <dashboards/index>
 
 .. note:: The three modules mentioned above that are not distributed with DKAN
    continue to be maintained in separate repositories because they work

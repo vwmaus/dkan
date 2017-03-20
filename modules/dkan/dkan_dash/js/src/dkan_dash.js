@@ -3,8 +3,6 @@ import { Dashboard, Card, BaseComponent, Dataset, DataHandler, DataHandlers, Eve
 import Datastore from './datastore';
 import {isArray, isEmpty,  mapValues, reduce, isEqual, pick, intersection} from 'lodash';
 
-let baseUrl = '';
-
 for (let name in Drupal.settings.dkanDash.dataHandlers) {
   DataHandler.set(name, Drupal.settings.dkanDash.dataHandlers[name]);
 }
@@ -12,10 +10,7 @@ for (let name in Drupal.settings.dkanDash.dataHandlers) {
 export default class DKANDash extends Dashboard {
   constructor(props) {
     super(props);
-    this.Datastore = new Datastore({
-      baseUrl: baseUrl,
-      dataResources: this.props.dataResources
-    });
+    this.Datastore = new Datastore({ dataResources: this.props.dataResources });
 
     this.state.appliedFilters = this.getConstantAppliedFilters();
   }
@@ -23,7 +18,7 @@ export default class DKANDash extends Dashboard {
   applyDataHandlers(datahandlers, componentData=[]) {
     let _handlers = datahandlers;
     let _appliedFilters = this.state.appliedFilters || {};
-    let _data = DataHandler.handle.call(this, _handlers, componentData, this.state.data, {e:'foo'}, _appliedFilters);
+    let _data = DataHandler.handle.call(this, _handlers, componentData, this.state.data, {}, _appliedFilters);
     return _data;
   }
 

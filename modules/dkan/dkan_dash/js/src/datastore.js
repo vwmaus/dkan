@@ -13,14 +13,13 @@ const DKAN_AG_FIELDS = [
 
 export default class Datastore {
   constructor(props) {
-    this.baseUrl = props.baseUrl;
     this.dataResources = props.dataResources || {};
     this.queryLimit = props.queryLimit || QUERY_LIMIT;
   }
 
   fetchResource(queries) {
     return new Promise((resolve, reject) => {
-      fetch(this.baseUrl + '/api/action/datastore/search.json', {
+      fetch('/api/action/datastore/search.json', {
         method: 'post',
         headers: {
           'Accept': 'application/json',
@@ -35,7 +34,7 @@ export default class Datastore {
       }).catch(e => {
         return reject(e);
       });
-    })
+    });
   }
 
   // takes current query and query key
