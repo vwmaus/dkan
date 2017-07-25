@@ -1,5 +1,8 @@
 .. _`datastore API`:
+<<<<<<< HEAD
 
+=======
+>>>>>>> user-docs
 Datastore API
 =============
 

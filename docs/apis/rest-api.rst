@@ -1,5 +1,8 @@
 .. _`Dataset REST API`:
+<<<<<<< HEAD
 
+=======
+>>>>>>> user-docs
 #####################
 Dataset REST API
 #####################
