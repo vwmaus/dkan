@@ -1,3 +1,4 @@
+====================
 Visualizations: Charts
 ====================
 
@@ -63,7 +64,7 @@ Unlike other content types, Charts don't automatically collect on a page on your
    :alt: An animated screencap displaying the Chart creation process in DKAN.
 
 Key information when adjusting your Chart settings:
----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **Query Editor:**
 The Query Editor field lets you search the contents of the Resource powering your Chart and visualize the most relevant pieces. This function is useful for especially large Datasets. Use this setting to perform a complex search on the data in your Resource and narrow the focus to display on your Chart. It's good for highlighting key insights in the data. Use the same format conventions as in the Resource (ie $0.00, x/y/z) when performing the search.
@@ -200,10 +201,10 @@ To remove a filter, click the trash can icon next to the filter name.
 .. image:: images/chart-filter-editor.png
 
 Chart Configuration Options Glossary:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 X Axis
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 * **Format** Select an appropriate format for the X Axis labels.
 * **Axis Label**  will provide a custom label for the x axis.
 * **Note:** Axis labels do not display for Pie Charts.
@@ -212,7 +213,7 @@ X Axis
 * **Step**: Use the Step field to define the value between each tick within the range. **NOTE:** If the range set for tick values is smaller than the range of complete data represented, the chart will be abbreviated.
 
 Y Axis
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 * **Axis Label** Provides a custom label for the y axis.
 * **Note:** Axis labels do not display for Pie Charts.
 * Adjust the *distance* field if your axis label overlaps the y-axis data labels. You can move the label left with positive values, and right with negative values. You may need to adjust the left margin of the chart as well.
@@ -220,7 +221,7 @@ Y Axis
 * **Step**: Use the Step field to define the value between each tick within the range. **NOTE:** If the range set for tick values is smaller than the range of complete data represented, the chart will be abbreviated.
 
 General
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 :Color: Set the color the chart is drawn in. Use either a `HEX color code <http://www.w3schools.com/tags/ref_colorpicker.asp>`_ or a `valid css color name <http://www.w3schools.com/cssref/css_colornames.asp>`_ Separate multiple colors with commas.
 :Goal: Overlay a goal or target line on the chart.
 :Margin: Enter value of margin in the order: *top, right, bottom, left*
@@ -232,7 +233,7 @@ General
 :Fewer X-axis Labels: Reduces the number of labels displayed along the x-axis.
 
 Save the chart
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 Remember to click **Finish** to save your configuration changes.
 
 Recline
