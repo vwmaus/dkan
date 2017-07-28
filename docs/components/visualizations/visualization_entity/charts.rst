@@ -200,10 +200,10 @@ To remove a filter, click the trash can icon next to the filter name.
 .. image:: images/chart-filter-editor.png
 
 Chart Configuration Options Glossary:
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 X Axis
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------
 * **Format** Select an appropriate format for the X Axis labels.
 * **Axis Label**  will provide a custom label for the x axis.
 * **Note:** Axis labels do not display for Pie Charts.
@@ -212,7 +212,7 @@ X Axis
 * **Step**: Use the Step field to define the value between each tick within the range. **NOTE:** If the range set for tick values is smaller than the range of complete data represented, the chart will be abbreviated.
 
 Y Axis
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------
 * **Axis Label** Provides a custom label for the y axis.
 * **Note:** Axis labels do not display for Pie Charts.
 * Adjust the *distance* field if your axis label overlaps the y-axis data labels. You can move the label left with positive values, and right with negative values. You may need to adjust the left margin of the chart as well.
@@ -220,7 +220,7 @@ Y Axis
 * **Step**: Use the Step field to define the value between each tick within the range. **NOTE:** If the range set for tick values is smaller than the range of complete data represented, the chart will be abbreviated.
 
 General
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------
 :Color: Set the color the chart is drawn in. Use either a `HEX color code <http://www.w3schools.com/tags/ref_colorpicker.asp>`_ or a `valid css color name <http://www.w3schools.com/cssref/css_colornames.asp>`_ Separate multiple colors with commas.
 :Goal: Overlay a goal or target line on the chart.
 :Margin: Enter value of margin in the order: *top, right, bottom, left*
@@ -232,9 +232,9 @@ General
 :Fewer X-axis Labels: Reduces the number of labels displayed along the x-axis.
 
 Save the chart
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------
 Remember to click **Finish** to save your configuration changes.
 
 Recline
-*****************
+-------
 The bundle also includes an integration with the `Recline module <https://github.com/NuCivic/recline>`_. If you have a content type with a recline file field, you can add a Recline Field Reference field to your chart bundle. This field type is defined in a module that comes bundled with `Visualization Entity <https://github.com/NuCivic/visualization_entity>`_. The included DKAN integration module adds a Recline Field Reference pointing specifically at DKAN's Resource content type. In this case, entering an existing Resource node in the reference field will automatically populate the resource file into the chart entity's file field.
