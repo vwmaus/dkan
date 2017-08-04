@@ -32,7 +32,7 @@ You can choose which contents within the data source to display on your Chart. S
 
 - **Series.** Series show the values within a column as the y-axis values mapped along the X-Field values. Once you choose a column to provide the values for the X-Field, Series provide the corresponding y-values. You can choose multiple columns from your Resource to be Series, which can be helpful for showing multiple data points next to one another.
 - **X-Field.** The X-Field provides the x-axis values for your Chart. Choose a column from your Resource to populate the X-Field with values.
-- **Data Format:** Selecting the correct data format helps Charts to display correctly. Choose the format that matches the format of the values in your X-Field. If you’re not sure, you can leave the selection on Auto and DKAN will make the best selection. If the values are text/non-numeric, select the String format.
+- **Data Format:** Selecting the correct data format helps Charts to display correctly. Choose the format that matches the format of the values in your X-Field. If you’re not sure, you can leave the selection on Auto and DKAN will make the best selection. If the values are text/non-numeric, select the String format. If your value represents a date (using a common date format, such as YYYY-MM-DD or MM/DD/YY), then choose "date."
 
 **Choose a Chart type:** Different types of data work better with certain Chart types more than others. DKAN offers a number of different Chart types like line graphs, bar charts, and pie charts and different types of data will work better as a line graph rather than a bar chart.
 
@@ -78,7 +78,7 @@ Terms add a broad filter to highlight characteristics shared by multiple data po
 - **X-axis Chart Settings:**
 These settings are specific to the x-axis.
 
-  - **X-Format:** Choosing the X-Format lets you specify how the x-axis values are represented rather than as the basic numbers. For example, the value 5.2 will show as $5.20 if the X-Format is $0.00.
+  - **X-Format:** Choosing the X-Format lets you specify how the x-axis values are represented rather than as the basic numbers. For example, the value 5.2 will show as $5.20 if the X-Format is $0.00. If your value represents a date, you may choose one of the date options - mm/dd/yyyy, mm-dd-yyyy, or Year. Note that your data must be formatted according to one of those formats, though yyyy-mm-dd or "2017-Mar-05" also works. If your observations include milliseconds, i.e. "7/1/2017  12:00:00 PM," this will also work within Visualizations as long as you choose one of the Date options.
 
   - **X Label Rotation:** Use this to rotate the values of the x-axis of your Chart. With 0 degrees rotation, the labels appear side by side. Enter a number to add a degree of rotation and the labels will appear at an angle.
 
@@ -91,7 +91,7 @@ These settings are specific to the x-axis.
 - **Y-axis Chart Settings:**
 These settings are specific to the y-axis.
 
-  - **Format:** Choosing the Format lets you specify how the y-axis values are represented rather than as basic numbers. For example, the value 5.2 will show as $5.20 if the Format is $0.00.
+  - **Format:** Choosing the Format lets you specify how the y-axis values are represented rather than as basic numbers. For example, the value 5.2 will show as $5.20 if the Format is $0.00. If your value represents a date, you may choose one of the date options - mm/dd/yyyy, mm-dd-yyyy, or Year. Note that your data must be formatted according to one of those formats, though yyyy-mm-dd or "2017-Mar-05" also works. If your observations include milliseconds, i.e. "7/1/2017  12:00:00 PM," this will also work within Visualizations as long as you choose one of the Date options.
 
   - **Y Axis Label:** This is the name that describes the y-axis and appears on your DKAN Chart below the y-axis. Create a label to provide more context for the data being visualized.
 
