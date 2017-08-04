@@ -38,6 +38,8 @@ You can choose which contents within the data source to display on your Chart. S
 
 For continuous data (like time) use a line Chart to show the movement of the data. For categorical data (like a discrete totals within a category) use bar charts, and for data that totals a sum use a pie chart.
 
+(Note: On horizontal bar charts, the Y-axis controls affect the X-axis, and vice-versa. This is a bug that will be fixed in later versions of DKAN.)
+
 There are a number of Chart types to best display your data depending on what you want the Chart to show and the contents of your Resource. You can choose a Chart type and then move to the Preview and Adjust screen to make the final modifications to your Chart. You can always change the Chart type by using the Back button, so that you can test and see which Chart type works best with your data.
 
 .. figure:: .../images/site_manager_playbook/adding_new_content/adding_new_content_18.png
