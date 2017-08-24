@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Public DKAN Sites</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Public DKAN sites</h1>
+
+		<p>A partial list of DKAN sites around the world. Please feel free to <a href="https://github.com/NuCivic/dkan-sites/issues/new">submit an issue</a> in order to add others you know of that are not on this list.</p>
+		<div id="count">
+			<h2>Partial Count</h2>
+			<p>This is a partial census of public DKAN sites.</p>
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<h2><span class="counter" id="total"></span>+</h2>
+					<p>DKAN sites across the world.</p>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2><span class="counter" id="countries"></span>+</h2>
+					<p>Countries have adopted DKAN.</p>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2><span class="counter" id="cities"></span>+</h2>
+					<p>Cities have adopted DKAN.</p>
+				</div>
+			</div>
+		</div>
+		<div id="map">
+			<h2>Partial Map</h2>
+			<iframe height="420" width="100%" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/nucivic/dkan-sites/master/map.geojson"  title="map.geojson"></iframe>
+
+		</div>
+		<div id="tables"><h2>Partial List</h2></div>
+	</div>
+</body>
+</html>

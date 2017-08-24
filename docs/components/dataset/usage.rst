@@ -27,8 +27,8 @@ After creating a dataset, we’re prompted to add one or more data resources to 
 :Remote file: This option allows publishers to create a link to a data file published on another Internet website.  Although the file itself will remain on the other site, the data within the file can be imported into your DKAN site’s Datastore for preview and analysis by your users.  See :doc:`../datastore` for more information.
 
 .. note::
-   
-   To provide :doc:`previews <../visualizations/datapreviews>` for your resources, they must contain either a local or remote file (*Link to a file* or *Upload a file*). If you use *API or Website URL* your link will be displayed in an iFrame but not further previewing will be possible. 
+
+   To provide :doc:`previews <../visualizations/datapreviews>` for your resources, they must contain either a local or remote file (*Link to a file* or *Upload a file*). If you use *API or Website URL* your link will be displayed in an iFrame but not further previewing will be possible.
 
 To continue with our Wisconsin Polling Places example, we’ll add one resource file to the Dataset we created in Step 1.  Our resource file is a CSV, that is, comma-separated values format; this is a popular file format for exchanging tabular data.  Let’s explore the example resource shown here and the various fields within:
 

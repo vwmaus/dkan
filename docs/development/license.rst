@@ -49,3 +49,8 @@ References to the code
 + Hooks are invoked in `dkan_dataset_content_types.license.field.inc <https://github.com/NuCivic/dkan/blob/7.x-1.x/modules/dkan/dkan_dataset/modules/dkan_dataset_content_types/dkan_dataset_content_types.license_field.inc#L20>`_
 + Field formatter implementation for the license field is in `dkan_dataset_content_types.module <https://github.com/NuCivic/dkan/blob/7.x-1.x/modules/dkan/dkan_dataset/modules/dkan_dataset_content_types/dkan_dataset_content_types.module#L46>`_
 
+
+DKAN's Licensing
+----------------
+
+DKAN is licensed on the same terms as Drupal, under GPLv2 or later. If you have any questions about the license a good place to start is to look at the Drupal Licensing [FAQ](https://www.drupal.org/about/licensing#q1). The DKAN license also covers the related modules such as recline, open data scheme map, visualization entity feeds flat processor, and the taxonomy features.
