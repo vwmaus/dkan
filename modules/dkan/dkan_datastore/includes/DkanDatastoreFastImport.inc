@@ -44,6 +44,7 @@ class DkanDatastoreFastImport extends DkanDatastore implements DatastoreFormInte
    * Takes values from form submit, saves updated config and starts import.
    */
   public function manageFormSubmit(&$form_state) {
+    $this->dropDataStore();
     $importer_id = $form_state['values']['importer_id'];
     $source = feeds_source($importer_id, $this->node->nid);
     $parser = $source->importer->config['parser']['plugin_key'];
@@ -67,7 +68,6 @@ class DkanDatastoreFastImport extends DkanDatastore implements DatastoreFormInte
     // If a remote file is provided we fallback to feeds importer
     // else we perform a fast import.
     if (!empty($file_remote) || !$use_fast_import) {
-      $this->dropDataStore();
       $this->import();
     }
     else {
