@@ -347,9 +347,6 @@ class DkanDatastore extends Datastore implements DatastoreFormInterface {
     if ($table) {
       $table->drop();
     }
-    elseif (db_table_exists($table_name)) {
-      db_drop_table($table_name);
-    }
   }
 
   /**
