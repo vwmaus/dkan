@@ -196,6 +196,8 @@ projects:
     version: '1.1'
   link_iframe_formatter:
     version: '1.1'
+  linkchecker:
+    version: '1.3'
   manualcrop:
     version: '1.6'
   markdown:
