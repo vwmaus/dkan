@@ -249,7 +249,7 @@ workflows:
       - build:
           filters:
             branches:
-              ignore: /php7/
+              ignore: /.*php7.*/
       - build_php71:
           type: approval
           requires:
@@ -259,4 +259,4 @@ workflows:
       - build_php71:
           filters:
             branches:
-              only: /php7/
+              only: /.*php7.*/
